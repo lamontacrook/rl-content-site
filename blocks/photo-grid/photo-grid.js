@@ -26,14 +26,14 @@ function scrunch(divs) {
 }
 
 export default async function decorate(block) {
-  // const section = document.querySelector('.photo-grid-container');
+  const section = document.querySelector('.photo-grid-container');
 
-  // const background = createOptimizedPicture('https://main--rl-content-site--lamontacrook.hlx.page/media/ezgif-4-7edea768f4.jpg');
+  const background = createOptimizedPicture('https://main--rl-content-site--lamontacrook.hlx.page/media/ezgif-4-7edea768f4.jpg');
   
-  // const bgDiv = createTag('div', {class:'bg-image'});
-  // bgDiv.appendChild(background);
+  const bgDiv = createTag('div', {class:'bg-image'});
+  bgDiv.appendChild(background);
 
-  // const overlay = createTag('div', {class:'overlay'});
+  const overlay = createTag('div', {class:'overlay'});
 
   // [...section.children].forEach((div) => {
   //   if([...div.classList].includes('photo-grid-wrapper')) {
@@ -45,7 +45,7 @@ export default async function decorate(block) {
   //     })
   //   }
   //   overlay.appendChild(div);
-  });
+  // });
 
   
   section.appendChild(bgDiv);
